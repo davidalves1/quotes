@@ -6,7 +6,7 @@ fetch(baseUrl)
     const message = document.querySelector('.message');
     message.innerHTML = `"${res.message}"`;
 
-    const author = document.querySelector('.author');
+    const author = document.querySelector('#author');
     author.innerHTML = `(${res.author})`;
   })
   .catch(err => console.error('DEU RUIM! :(', err));

@@ -1,5 +1,4 @@
-// const baseUrl = 'https://devtech-quotes-api.herokuapp.com/quote';
-const baseUrl = 'http://localhost:8080/quote';
+const baseUrl = 'https://devtech-quotes-api.herokuapp.com/quote';
 
 fetch(baseUrl)
   .then(res => res.json())

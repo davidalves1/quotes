@@ -1,11 +1,13 @@
-fetch('https://quotes.rest/qod?category=inspire&language=en')
+// const baseUrl = 'https://devtech-quotes-api.herokuapp.com/quote';
+const baseUrl = 'http://localhost:8080/quote';
+
+fetch(baseUrl)
   .then(res => res.json())
   .then(res => {
-    const quote = res.contents.quotes[0];
-
     const message = document.querySelector('.message');
-    message.innerHTML = `"${quote.quote}"`
+    message.innerHTML = `"${res.message}"`;
 
     const author = document.querySelector('.author');
-    author.innerHTML = `(${quote.author})`;
+    author.innerHTML = `(${res.author})`;
   })
+  .catch(err => console.error('DEU RUIM', err));

@@ -9,4 +9,4 @@ fetch(baseUrl)
     const author = document.querySelector('.author');
     author.innerHTML = `(${res.author})`;
   })
-  .catch(err => console.error('DEU RUIM', err));
+  .catch(err => console.error('DEU RUIM! :(', err));

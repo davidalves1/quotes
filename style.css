@@ -24,7 +24,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .container::after {
@@ -55,6 +54,26 @@ body {
 
 .author p {
   font-size: 24px;
+}
+
+.footer {
+  z-index: 1;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #ddd9;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #ddd9;
+  transition: .2s;
+}
+
+.footer a:hover {
+  color: #eee;
 }
 
 @media (min-width: 768px) {
